@@ -1,0 +1,26 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "otherEntityName": "pessoa",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "Pessoa"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "cpf",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Cpf",
+            "fieldNameUnderscored": "cpf"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": true,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "changelogDate": "20150204142250"
+}

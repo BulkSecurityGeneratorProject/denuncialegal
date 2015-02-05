@@ -1,0 +1,38 @@
+
+<div>
+    <h2><span translate="denuncialegalApp.joao.detail.title">Joao</span> {{joao.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="denuncialegalApp.joao.idade">Idade</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{joao.idade}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="denuncialegalApp.joao.sexualidade">Sexualidade</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{joao.sexualidade}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="joao"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

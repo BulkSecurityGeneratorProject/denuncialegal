@@ -1,0 +1,27 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "otherEntityName": "pessoa",
+            "relationshipType": "one-to-one",
+            "otherEntityNameCapitalized": "Pessoa",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "morresempre",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Morresempre",
+            "fieldNameUnderscored": "morresempre"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "changelogDate": "20150204144635"
+}

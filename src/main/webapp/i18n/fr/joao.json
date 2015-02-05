@@ -1,0 +1,21 @@
+{
+    "denuncialegalApp": {
+        "joao" : {
+            "home": {
+                "title": "Joaos",
+                "createLabel": "Créer un nouveau Joao",
+                "createOrEditLabel": "Créer ou éditer un Joao"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Joao {{ id }} ?"
+            },
+            "detail": {
+                "title": "Joao"
+            },
+            "idade": "Idade",
+            "sexualidade": "Sexualidade",
+            "pessoa": "pessoa"
+        }
+    }
+}
+

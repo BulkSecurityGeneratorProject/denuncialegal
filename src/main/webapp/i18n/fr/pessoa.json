@@ -1,0 +1,20 @@
+{
+    "denuncialegalApp": {
+        "pessoa" : {
+            "home": {
+                "title": "Pessoas",
+                "createLabel": "Créer un nouveau Pessoa",
+                "createOrEditLabel": "Créer ou éditer un Pessoa"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Pessoa {{ id }} ?"
+            },
+            "detail": {
+                "title": "Pessoa"
+            },
+            "nome": "Nome",
+            "idade": "Idade"
+        }
+    }
+}
+

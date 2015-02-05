@@ -1,0 +1,20 @@
+{
+    "denuncialegalApp": {
+        "kuririn" : {
+            "home": {
+                "title": "Kuririns",
+                "createLabel": "Créer un nouveau Kuririn",
+                "createOrEditLabel": "Créer ou éditer un Kuririn"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Kuririn {{ id }} ?"
+            },
+            "detail": {
+                "title": "Kuririn"
+            },
+            "morresempre": "Morresempre",
+            "pessoa": "pessoa"
+        }
+    }
+}
+

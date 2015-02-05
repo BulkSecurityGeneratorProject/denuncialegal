@@ -1,0 +1,115 @@
+<div>
+
+    <h2 translate="denuncialegalApp.pessoa.home.title">Pessoa</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#savePessoaModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="denuncialegalApp.pessoa.home.createLabel">Create a new Pessoa</span>
+    </button>
+    <div class="modal fade" id="savePessoaModal" tabindex="-1" role="dialog" aria-labelledby="myPessoaLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="form" role="form" novalidate
+                      class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength"
+                      ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myPessoaLabel" translate="denuncialegalApp.pessoa.home.createOrEditLabel">Create or edit a Pessoa</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="pessoa.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="denuncialegalApp.pessoa.nome">Nome</label>
+                            <input type="text" class="form-control"
+                                   ng-model="pessoa.nome">
+                        </div>
+                        <div class="form-group">
+                            <label translate="denuncialegalApp.pessoa.idade">Idade</label>
+                            <input type="number" class="form-control"
+                                   ng-model="pessoa.idade">
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deletePessoaConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="form" ng-submit="confirmDelete(pessoa.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="denuncialegalApp.pessoa.delete.question" translate-values="{id: '{{pessoa.id}}'}">Are you sure you want to delete Pessoa {{pessoa.id}}?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="form.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="denuncialegalApp.pessoa.nome">Nome</th>
+                    <th translate="denuncialegalApp.pessoa.idade">Idade</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="pessoa in pessoas">
+                    <td><a ui-sref="pessoaDetail({id:pessoa.id})">{{pessoa.id}}</a></td>
+                    <td>{{pessoa.nome}}</td>
+                    <td>{{pessoa.idade}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="pessoaDetail({id:pessoa.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(pessoa.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(pessoa.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

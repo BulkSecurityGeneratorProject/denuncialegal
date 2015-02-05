@@ -1,0 +1,34 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "otherEntityName": "pessoa",
+            "relationshipType": "one-to-one",
+            "otherEntityNameCapitalized": "Pessoa",
+            "ownerSide": false
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "idade",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Idade",
+            "fieldNameUnderscored": "idade"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "sexualidade",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Sexualidade",
+            "fieldNameUnderscored": "sexualidade"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "changelogDate": "20150204144354"
+}
