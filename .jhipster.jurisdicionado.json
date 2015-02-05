@@ -1,0 +1,26 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nome",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nome",
+            "fieldNameUnderscored": "nome"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "tipoJurisdicionado",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "TipoJurisdicionado",
+            "fieldNameUnderscored": "tipo_jurisdicionado"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "changelogDate": "20150205170347"
+}

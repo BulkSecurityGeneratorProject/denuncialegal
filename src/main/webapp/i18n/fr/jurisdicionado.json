@@ -1,0 +1,20 @@
+{
+    "denuncialegalApp": {
+        "jurisdicionado" : {
+            "home": {
+                "title": "Jurisdicionados",
+                "createLabel": "Créer un nouveau Jurisdicionado",
+                "createOrEditLabel": "Créer ou éditer un Jurisdicionado"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Jurisdicionado {{ id }} ?"
+            },
+            "detail": {
+                "title": "Jurisdicionado"
+            },
+            "nome": "Nome",
+            "tipoJurisdicionado": "TipoJurisdicionado"
+        }
+    }
+}
+
