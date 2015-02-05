@@ -1,0 +1,21 @@
+{
+    "denuncialegalApp": {
+        "denuncia" : {
+            "home": {
+                "title": "Denuncias",
+                "createLabel": "Créer un nouveau Denuncia",
+                "createOrEditLabel": "Créer ou éditer un Denuncia"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Denuncia {{ id }} ?"
+            },
+            "detail": {
+                "title": "Denuncia"
+            },
+            "titulo": "Titulo",
+            "descricao": "Descricao",
+            "jurisdicionado": "jurisdicionado"
+        }
+    }
+}
+

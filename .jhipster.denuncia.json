@@ -1,0 +1,34 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "otherEntityName": "jurisdicionado",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Jurisdicionado",
+            "otherEntityField": "nome"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "titulo",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Titulo",
+            "fieldNameUnderscored": "titulo"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "descricao",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Descricao",
+            "fieldNameUnderscored": "descricao"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "changelogDate": "20150205171631"
+}

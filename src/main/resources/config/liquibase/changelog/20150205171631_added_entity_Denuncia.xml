@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity Denuncia.
+    -->
+    <changeSet id="20150205171631" author="jhipster">
+        <createTable tableName="T_DENUNCIA">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="titulo" type="varchar(255)"/>
+            <column name="descricao" type="varchar(255)"/>
+            <column name="jurisdicionado_id" type="bigint"/>
+        </createTable>
+        
+        <addForeignKeyConstraint baseColumnNames="jurisdicionado_id"
+                                 baseTableName="T_DENUNCIA"
+                                 constraintName="fk_denuncia_jurisdicionado_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="T_JURISDICIONADO"/>
+
+    </changeSet>
+</databaseChangeLog>
