@@ -1,11 +1,11 @@
 <div>
 
-    <h2 translate="denuncialegalApp.denuncia.home.title">Denuncia</h2>
+    <h2 translate="denuncialegalApp.categoriaIrregularidades.home.title">CategoriaIrregularidades</h2>
 
-    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveDenunciaModal" ng-click="clear()">
-        <span class="glyphicon glyphicon-flash"></span> <span translate="denuncialegalApp.denuncia.home.createLabel">Create a new Denuncia</span>
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveCategoriaIrregularidadesModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="denuncialegalApp.categoriaIrregularidades.home.createLabel">Create a new CategoriaIrregularidades</span>
     </button>
-    <div class="modal fade" id="saveDenunciaModal" tabindex="-1" role="dialog" aria-labelledby="myDenunciaLabel"
+    <div class="modal fade" id="saveCategoriaIrregularidadesModal" tabindex="-1" role="dialog" aria-labelledby="myCategoriaIrregularidadesLabel"
          aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -16,32 +16,21 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                                 ng-click="clear()">&times;</button>
-                        <h4 class="modal-title" id="myDenunciaLabel" translate="denuncialegalApp.denuncia.home.createOrEditLabel">Create or edit a Denuncia</h4>
+                        <h4 class="modal-title" id="myCategoriaIrregularidadesLabel" translate="denuncialegalApp.categoriaIrregularidades.home.createOrEditLabel">Create or edit a CategoriaIrregularidades</h4>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
                             <label>ID</label>
                             <input type="text" class="form-control" name="id"
-                                   ng-model="denuncia.id" readonly>
+                                   ng-model="categoriaIrregularidades.id" readonly>
                         </div>
 
                         <div class="form-group">
-                            <label translate="denuncialegalApp.denuncia.titulo">Titulo</label>
+                            <label translate="denuncialegalApp.categoriaIrregularidades.nome">Nome</label>
                             <input type="text" class="form-control"
-                                   ng-model="denuncia.titulo">
-                        </div>
-                        <div class="form-group">
-                            <label translate="denuncialegalApp.denuncia.descricao">Descricao</label>
-                            <input type="text" class="form-control"
-                                   ng-model="denuncia.descricao">
+                                   ng-model="categoriaIrregularidades.nome">
                         </div>
 
-                        <div class="form-group">
-                            <label translate="denuncialegalApp.denuncia.jurisdicionado">jurisdicionado</label>
-                            <select class="form-control" ng-model="denuncia.jurisdicionado.id" ng-options="jurisdicionado.id as jurisdicionado.nome for jurisdicionado in jurisdicionados">
-                            </select>
-                        </div>
-                        
 
                     </div>
                     <div class="modal-footer">
@@ -57,17 +46,17 @@
         </div>
     </div>
 
-    <div class="modal fade" id="deleteDenunciaConfirmation">
+    <div class="modal fade" id="deleteCategoriaIrregularidadesConfirmation">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form name="form" ng-submit="confirmDelete(denuncia.id)">
+                <form name="form" ng-submit="confirmDelete(categoriaIrregularidades.id)">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                                 ng-click="clear()">&times;</button>
                         <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
                     </div>
                     <div class="modal-body">
-                        <p translate="denuncialegalApp.denuncia.delete.question" translate-values="{id: '{{denuncia.id}}'}">Are you sure you want to delete Denuncia {{denuncia.id}}?</p>
+                        <p translate="denuncialegalApp.categoriaIrregularidades.delete.question" translate-values="{id: '{{categoriaIrregularidades.id}}'}">Are you sure you want to delete CategoriaIrregularidades {{categoriaIrregularidades.id}}?</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
@@ -87,31 +76,27 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th translate="denuncialegalApp.denuncia.titulo">Titulo</th>
-                    <th translate="denuncialegalApp.denuncia.descricao">Descricao</th>
-                    <th translate="denuncialegalApp.denuncia.jurisdicionado">jurisdicionado</th>
+                    <th translate="denuncialegalApp.categoriaIrregularidades.nome">Nome</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="denuncia in denuncias">
-                    <td><a ui-sref="denunciaDetail({id:denuncia.id})">{{denuncia.id}}</a></td>
-                    <td>{{denuncia.titulo}}</td>
-                    <td>{{denuncia.descricao}}</td>
-                    <td>{{denuncia.jurisdicionado.nome}}</td>
+                <tr ng-repeat="categoriaIrregularidades in categoriaIrregularidadess">
+                    <td><a ui-sref="categoriaIrregularidadesDetail({id:categoriaIrregularidades.id})">{{categoriaIrregularidades.id}}</a></td>
+                    <td>{{categoriaIrregularidades.nome}}</td>
                     <td>
                         <button type="submit"
-                                ui-sref="denunciaDetail({id:denuncia.id})"
+                                ui-sref="categoriaIrregularidadesDetail({id:categoriaIrregularidades.id})"
                                 class="btn btn-info">
                             <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
                         </button>
                         <button type="submit"
-                                ng-click="update(denuncia.id)"
+                                ng-click="update(categoriaIrregularidades.id)"
                                 class="btn btn-primary">
                             <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
                         </button>
                         <button type="submit"
-                                ng-click="delete(denuncia.id)"
+                                ng-click="delete(categoriaIrregularidades.id)"
                                 class="btn btn-danger">
                             <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
                         </button>

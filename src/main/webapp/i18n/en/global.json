@@ -12,6 +12,7 @@
                 "kuririn": "Kuririn",
                 "jurisdicionado": "Jurisdicionado",
                 "denuncia": "Denuncia",
+                "categoriaIrregularidades": "CategoriaIrregularidades",
                 "additionalEntity": "JHipster will add addtional entities"
             },
             "account": {

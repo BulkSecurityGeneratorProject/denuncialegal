@@ -11,5 +11,6 @@
     <include file="classpath:config/liquibase/changelog/20150204144635_added_entity_Kuririn.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20150205170347_added_entity_Jurisdicionado.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20150205171631_added_entity_Denuncia.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150206082618_added_entity_CategoriaIrregularidades.xml" relativeToChangelogFile="false"/>
     <!-- JHipster will add liquibase changelogs here -->
 </databaseChangeLog>

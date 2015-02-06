@@ -5,13 +5,14 @@
         "menu": {
             "home": "Início",
             "entities": {
-                "main": "Entidades",
+                "main": "Menu",
                 "pessoa": "Pessoa",
                 "cliente": "Cliente",
                 "joao": "Joao",
                 "kuririn": "Kuririn",
                 "jurisdicionado": "Jurisdicionado",
                 "denuncia": "Denuncia",
+                "categoriaIrregularidades": "CategoriaIrregularidades",
                 "additionalEntity": "JHipster will add addtional entities"
             },
             "account": {

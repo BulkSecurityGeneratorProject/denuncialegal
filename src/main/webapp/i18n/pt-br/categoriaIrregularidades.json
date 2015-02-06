@@ -1,0 +1,18 @@
+{
+    "denuncialegalApp": {
+        "categoriaIrregularidades" : {
+            "home": {
+                "title": "CategoriaIrregularidadess",
+                "createLabel": "Create a new CategoriaIrregularidades",
+                "createOrEditLabel": "Create or edit a CategoriaIrregularidades"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete CategoriaIrregularidades {{ id }}?"
+            },
+            "detail": {
+                "title": "CategoriaIrregularidades"
+            },
+            "nome": "Nome"
+        }
+    }
+}
