@@ -32,8 +32,13 @@
                         </div>
                         <div class="form-group">
                             <label translate="denuncialegalApp.jurisdicionado.tipoJurisdicionado">TipoJurisdicionado</label>
-                            <input type="number" class="form-control"
-                                   ng-model="jurisdicionado.tipoJurisdicionado">
+                            <select ng-model="jurisdicionado.tipoJurisdicionado" class="form-control">
+                            	<option value="1">Assembleia</option>
+                            	<option value="2">Prefeitura</option>
+                            	<option value="3">Governo</option>
+                            	<option value="4">ONG</option>
+                            </select>
+                            
                         </div>
 
 

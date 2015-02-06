@@ -14,7 +14,7 @@ Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
 /* ==========================================================================
 Developement Ribbon
 ========================================================================== */
-.development {
+.ddevelopment {
     position: absolute;
     width: 149px;
     height: 149px;
@@ -71,7 +71,7 @@ Browser Upgrade Prompt
     display: inline-block;
     width: 347px;
     height: 497px;
-    background: url("../images/hipster.png") no-repeat center top;
+    background: url("../images/denuncias.jpg") no-repeat center top;
     background-size: contain;
 }
 

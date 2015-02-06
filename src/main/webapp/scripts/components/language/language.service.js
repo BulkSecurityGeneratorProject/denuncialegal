@@ -28,6 +28,7 @@ angular.module('denuncialegalApp')
  */
     .constant('LANGUAGES', [
         'en', 'fr'
+        ,'pt-br'
         //JHipster will add new languages here
     ]
 );

@@ -1,3 +1,24 @@
+<script>
+	function initialize() {
+	  var mapOptions = {
+	    zoom: 8,
+	    center: new google.maps.LatLng(-34.397, 150.644),
+	    mapTypeId: google.maps.MapTypeId.ROADMAP
+	  }
+	  var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+	}
+	
+	function loadScript() {
+	  var script = document.createElement("script");
+	  script.type = "text/javascript";
+	  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDMm1ZZgwURHz_yb_ZbYv2nHwVWJCad3nY&sensor=FALSE&callback=initialize";
+	  document.body.appendChild(script);
+	}
+	
+	window.onload = loadScript;
+
+</script>
+
 <div>
 
     <h2 translate="denuncialegalApp.denuncia.home.title">Denuncia</h2>
@@ -41,6 +62,8 @@
                             <select class="form-control" ng-model="denuncia.jurisdicionado.id" ng-options="jurisdicionado.id as jurisdicionado.nome for jurisdicionado in jurisdicionados">
                             </select>
                         </div>
+                        
+                         <div id="map_canvas" style="width:100%; height:100%"></div>
 
                     </div>
                     <div class="modal-footer">
